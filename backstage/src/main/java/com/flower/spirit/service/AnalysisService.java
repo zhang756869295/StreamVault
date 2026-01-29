@@ -1059,7 +1059,6 @@ public class AnalysisService {
 	}
 
 	private VideoUrlResult selectBestVideoUrl(JSONArray formats) {
-		System.out.println(formats.toJSONString());
 		if (formats == null || formats.size() == 0) {
 			return new VideoUrlResult(null, false, 0);
 		}
